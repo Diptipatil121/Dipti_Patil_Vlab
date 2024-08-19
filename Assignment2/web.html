@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+
+    <h2>Registration Form</h2>
+
+    <form action="/submit_form" method="POST">
+        <!-- Name Field -->
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="firstname" placeholder="Enter your first name" required><br><br>
+
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lastname" placeholder="Enter your last name" required><br><br>
+
+        <!-- Email Field -->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required><br><br>
+
+        <!-- Password Field -->
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required><br><br>
+
+        <!-- Phone Number Field -->
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number"><br><br>
+
+        <!-- Gender Field -->
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label><br><br>
+
+        <!-- Date of Birth Field -->
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <!-- Address Field -->
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" placeholder="Enter your address" rows="4" cols="50"></textarea><br><br>
+
+        <!-- Country Field -->
+        <label for="country">Country:</label><br>
+        <select id="country" name="country">
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+            <option value="canada">Canada</option>
+        </select><br><br>
+
+        <!-- Profile Picture Field -->
+        <label for="profilepic">Profile Picture:</label><br>
+        <input type="file" id="profilepic" name="profilepic"><br><br>
+
+        <!-- Agree to Terms Checkbox -->
+        <input type="checkbox" id="agree" name="agree" value="yes" required>
+        <label for="agree">I agree to the terms and conditions</label><br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Register">
+    </form>
+
+</body>
+</html>
