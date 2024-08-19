@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>String Calculator</title>
+  <link rel="stylesheet" href="web5.css">
+</head>
+<body>
+  <h1>String Calculator</h1>
+  <form>
+    <label for="input-field">Input String:</label>
+    <input type="text" id="input-field" />
+    <br><br>
+    <label for="function-select">Select Function:</label>
+    <select id="function-select">
+      <option value="length">Length</option>
+      <option value="concat">Concat</option>
+      <option value="charAt">Char At</option>
+      <option value="charCodeAt">Char Code At</option>
+      <option value="substr">Substr</option>
+      <option value="slice">Slice</option>
+      <option value="indexOf">Index Of</option>
+      <option value="replace">Replace</option>
+    </select>
+    <br><br>
+    <label for="arg1-field">Argument 1:</label>
+    <input type="text" id="arg1-field" />
+    <br><br>
+    <label for="arg2-field">Argument 2:</label>
+    <input type="text" id="arg2-field" />
+    <br><br>
+    <button id="calculate-button">Calculate</button>
+    <br><br>
+    <label for="result-field">Result:</label>
+    <input type="text" id="result-field" readonly />
+  </form>
+
+ <script src="index.ts"></script>
+  <script src="index.js"></script>
+</body>
+</html>
