@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Second Web Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .content {
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to My Second Web Page</h1>
+    </header>
+
+    <!-- Content Section -->
+    <div class="content">
+
+        <!-- Introduction Section -->
+        <div class="section">
+            <h2>Introduction</h2>
+            <p>Hello!! My name is <span style="font-weight: bold;"> Dipti Patil </span>, and I'm excited to welcome you to my personal webpage. This is a space where I share <span style="font-style: italic;">my thoughts</span>, ideas, and projects. I hope you find something that interests you!</p>
+        </div>
+
+        <!-- Features Section -->
+        <div class="section">
+            <h2>Features</h2>
+            <p>Here are some features of this webpage:</p>
+            <ul>
+                <li><span style="color: blue;">Interactive</span> design that adapts to different screen sizes.</li>
+                <li>Clean and <span style="font-weight: bold;">minimalist</span> layout for easy navigation.</li>
+                <li>Fast loading times for a smooth user experience.</li>
+            </ul>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="section">
+            <h2>Contact</h2>
+            <p>If you'd like to get in touch, feel free to <span style="color: green; font-weight: bold;">email me</span> at <span style="font-style: italic;"> diptipatil770@gmail.com</span>. I'm always open to feedback, collaborations, or just a friendly chat!</p>
+        </div>
+
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; <span id="year"></span>  Dipti Patil . All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Script to dynamically update the year in the footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    
+</body>
+</html>
